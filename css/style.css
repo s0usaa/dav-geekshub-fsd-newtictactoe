@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "jedi2";
+    src: url(./jedi2.ttf);
+}
+
+body{
+    background-image: url(../img/fondo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.head{
+    height: 20vh;
+}
+
+.headText{
+    font-family: jedi2;
+    font-size: 1.8rem;
+}
+
+.mainbtn{
+    height: 3em;
+    font-size: 1.5rem;
+}
+
+@media (min-width:541px){
+    .headText{
+        font-size: 3rem;
+    }
+}
+
+
+.buttonStart{
+    height: 80vh;
+    font-family: jedi2;
+}
+
+a{
+    text-decoration: none;
+    color: gold;
+}
+
+/* estilos de players */
+
+.menuPlay{
+    height: 80vh;
+    font-family: jedi2;
+}
+
+.playerbtn{
+    height: 3em;
+    color: gold;
+}
+
+.inputPlayers{
+    height: 3.5em;
+}
+
+@media (min-width:722px){
+    .headText{
+        font-size: 4.1rem;
+    }
+    .mainbtn{
+        font-size: 2rem;
+    }
+    .inputPlayers{
+        font-size: 1.3em;
+    }
+    .playerbtn{
+        font-size: 2rem;
+    }
+}
+
+/* estilos tablero */
+
+.table{
+    height: 80vh;
+    font-family: jedi2;
+}
+
+.gameTable{
+    height: 40vh;
+    width: 40vw;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cell{
+    border: 2px solid gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: white;
+    font-family: jedi2;
+    cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+
+.cell:nth-child(3n + 1){
+    border-left: none;
+}
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8){
+    border-bottom: none;
+}
+
+.cell:nth-child(3n + 3){
+    border-right: none;
+}
+
+.card{
+    background: transparent;
+    border: none;
+}
+
+@media (min-width:722px){
+    .card-body{
+        font-size: 1.4rem;
+    }
+    .h5Text{
+        font-size: 1.6rem;
+    }
+    .btnBoard{
+        height: 4em;
+    }
+    .textWin{
+        font-size: 2rem;
+    }
+    .textWinP{
+        font-size: 3rem;
+    }
+    .textDesc{
+        font-size: 1.3rem;
+    }
+    .btnWin{
+        font-size: 1.3rem;
+        height: 4em;
+    }
+}
+
+.btnBoard{
+    color: gold;
+}
+
+/* Estilos pagina Victoria */
+
+.victory{
+    height: 80vh;
+    font-family: jedi2;
+}
+
+.btnWin{
+    color: gold;
+}
